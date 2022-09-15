@@ -56,7 +56,7 @@ if (questionFiveGuess === 'Y' || questionFiveGuess === 'YES') {
 
 
 
-"in collaboration with Chris Johnston and Trace Dugar"
+'in collaboration with Chris Johnston and Trace Dugar'
 
 
 
@@ -83,7 +83,7 @@ while (guessNum > 0) {
 
 
 
-
+let guessCorrect = false;
 let guessNumQ7 = 6;
 let myFoodArr = ['sushi', 'roast beef sandwiches', 'bbq chicken pizza', 'pho', 'southern bbq', 'steak chicken', 'tuna no crust', 'cheese burger', 'cheesecake']
 while (guessNumQ7 > 0) {
@@ -93,12 +93,13 @@ while (guessNumQ7 > 0) {
   for (let i = 0; i < myFoodArr.length; i++) {
     if (questionSevenGuess === myFoodArr[i]) {
       alert('you are right');
+      guessCorrect = true;
       score++;
       guessNumQ7 = 0;
     }
   }
 }
-if (guessNumQ7 === 0){
+if (guessNumQ7 === 0 && !guessCorrect){
   alert('You ran out of trys.')
 }
 
