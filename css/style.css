@@ -1,6 +1,31 @@
-body{
-  background-color: royalblue;
+.masthead {
+  padding: 6em 0;
+  background-image: url('ben-carless-YuJokOHODF0-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top: solid 1em #FFCF33;
 }
+
+.masthead-intro {
+  /* Layout Declarations */
+  margin-bottom: 0.1em;
+  /* Typography Declarations */
+  font-family: "Gentium Book Basic", Georgia, serif;
+  font-size: 2em;
+}
+
+
+
+body {
+  /* Typography Declarations */
+  color: #222222;
+  font-size: 1em;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+
+
+
 h1 {
   font-size: 5vw;
 }
